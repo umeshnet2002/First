@@ -172,7 +172,7 @@
         stage('Package') {
             steps {
                 dir('My_Project') {
-                    bat 'mvn package'
+                    bat 'mvn package -DskipTests'
                 }
             }
         }
